@@ -34,8 +34,12 @@ export class Details {
     }
     serve() {
         const serve = document.createElement("div");
-        serve.innerHTML = "test";
+        serve.className = "serve";
         this.detailsContainer.appendChild(serve);
+        //header
+        const head = document.createElement("h1");
+        head.innerHTML = "What We Serve";
+        serve.appendChild(head);
     }
 }
 

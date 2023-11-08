@@ -1,0 +1,25 @@
+.container {
+    border: 1px solid black;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    margin-top: 3rem;
+}
+
+.container > .imgContainer {
+    border: 1px solid red;
+    width: 50%;
+    height: 100%;
+}
+
+.container > .rightContainer {
+    border: 1px solid red;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}

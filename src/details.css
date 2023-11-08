@@ -1,0 +1,23 @@
+.detailsContainer {
+    border: 1px solid black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 2rem;
+}
+
+.detailsContainer > div {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 5px;
+}
+
+.detailsContainer > .location > img {
+    border: 1px solid black;
+    width: 90%;
+    height: 5rem;
+}

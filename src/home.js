@@ -4,7 +4,13 @@ export class Home {
     constructor(parent) {
         this.parent = parent;
     }
+    clear() {
+        let prev = this.parent.querySelectorAll("div");
+        prev.forEach(div => div.remove());
+    }
     render() { 
+        this.clear();
+
         const container = document.createElement("div");
         container.className = "container";
         this.parent.appendChild(container);

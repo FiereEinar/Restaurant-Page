@@ -1,3 +1,10 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     border: 1px solid black;
     width: 700px;
@@ -22,4 +29,14 @@
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
+}
+
+.container > .rightContainer > p {
+    font-family: 'Edu TAS Beginner', sans-serif;
+}
+
+.container > .rightContainer > button {
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-weight: 800;
 }

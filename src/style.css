@@ -30,6 +30,11 @@ nav > .right > .logo {
     align-items: center;
 }
 
+nav > .right > .logo > img {
+    width: 2rem;
+    height: 2rem;
+}
+
 nav  > .right > ul {
     flex-shrink: 1;
     flex-basis: 360px;

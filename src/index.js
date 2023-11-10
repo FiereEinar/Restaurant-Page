@@ -10,7 +10,7 @@ const navBtn = document.querySelectorAll(".navBtn");
 function removeActiveClass() {
     navBtn.forEach((btn) => {
         btn.classList.remove("active");
-    })
+    });
 }
 
 navBtn.forEach((btn) => {

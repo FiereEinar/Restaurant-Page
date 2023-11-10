@@ -13,6 +13,7 @@ function removeActiveClass() {
     });
 }
 
+home.render();
 navBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
         removeActiveClass();

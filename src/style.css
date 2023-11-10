@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Noto+Sans:wght@200&family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:wght@100&family=Signika+Negative:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Noto+Sans:wght@200&family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:wght@100&family=Signika+Negative:wght@300&display=swap');
+
 
 * {
     margin: 0;
@@ -15,6 +15,8 @@ nav {
     height: 5rem;
     padding: 0 15px;
     flex-wrap: wrap;
+    background-color: #020617;
+    color: #fff;
 }
 
 nav > .right {
@@ -28,6 +30,7 @@ nav > .right > .logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: cursive;
 }
 
 nav > .right > .logo > img {

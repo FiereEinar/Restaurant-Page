@@ -17,7 +17,7 @@ export class Home {
         //img
         const imgContainer = document.createElement("div");
         imgContainer.className = "imgContainer";
-        imgContainer.backgroundImage = "url(../src/images/star.svg)";
+        // imgContainer.style.backgroundImage = "url('../src/images/home-food.jpg')";
         container.appendChild(imgContainer);
         //right side
         const rightContainer = document.createElement("div");

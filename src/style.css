@@ -13,7 +13,7 @@ nav {
     /* background-color: aquamarine; */
     justify-content: space-between;
     height: 5rem;
-    padding: 0 15px;
+    padding: 0 25px;
     flex-wrap: wrap;
     background-color: #020617;
     color: #fff;
@@ -29,13 +29,17 @@ nav > .right > .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: cursive;
 }
 
-nav > .right > .logo > img {
-    width: 2rem;
-    height: 2rem;
+nav > .right > .logo > h1 {
+    font-family: "Edu TAS Beginner";
+    color: aqua;
 }
+nav > .right > .logo > h1 > span {
+    font-family: "Edu TAS Beginner";
+    color: #fff;
+}
+
 
 nav  > .right > ul {
     flex-shrink: 1;
@@ -88,13 +92,18 @@ nav > .buttonContainer > button:hover {
     color: black;
 }
 
+nav > .buttonContainer > button:active {
+    opacity: 0.8;
+}
+
 .content {
     background-color: lightgrey;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     padding: 1rem;
-    padding-bottom: 10rem;
     background-color: #cbd5e1;
+    padding-bottom: 10rem;
 }
 

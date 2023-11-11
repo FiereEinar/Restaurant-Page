@@ -44,6 +44,11 @@ export class Staff {
         this.cards();
     }
     container() {
+        const header = document.createElement("div");
+        header.className = "staffHeader";
+        header.innerHTML = "OUR TEAM";
+        this.parent.appendChild(header);
+
         this.staffContainer = document.createElement("div");
         this.staffContainer.className = "staffContainer";
         this.parent.appendChild(this.staffContainer);

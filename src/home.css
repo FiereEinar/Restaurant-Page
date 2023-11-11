@@ -29,7 +29,7 @@
 .container > .rightContainer {
     width: 50%;
     height: 100%;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,21 @@
 }
 
 .container > .rightContainer > button {
+    cursor: pointer;
     padding: 5px 15px;
     border-radius: 8px;
     font-weight: 800;
+    color: #fff;
+    border: 1px solid aqua;
+    background-color: #111827;
+    transition: all 0.2s ease;
+}
+
+.container > .rightContainer > button:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.container > .rightContainer > button:active {
+    opacity: 0.8;
 }

@@ -6,17 +6,18 @@
 }
 
 .container {
-    border: 1px solid black;
     width: 700px;
     height: 500px;
     display: flex;
     margin-top: 3rem;
     border-radius: 15px;
     overflow: hidden;
+    background-color: #111827;
+    color: #fff;
+    box-shadow: 0 4px 16px rgb(0, 0, 0, 0.8);
 }
 
 .container > .imgContainer {
-    border: 1px solid red;
     width: 50%;
     height: 100%;
     background-image: url(../src/images/home-food.jpg);
@@ -26,7 +27,6 @@
 }
 
 .container > .rightContainer {
-    border: 1px solid red;
     width: 50%;
     height: 100%;
     padding: 10px;

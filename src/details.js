@@ -5,12 +5,7 @@ export class Details {
         this.parent = parent;
         this.detailsContainer;
     }
-    clear() {
-        let prev = this.parent.querySelectorAll("div");
-        prev.forEach(div => div.remove());
-    }
     render() {
-        this.clear();
         this.container();
         this.location();
         this.serve();

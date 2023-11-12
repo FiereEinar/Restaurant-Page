@@ -22,31 +22,35 @@ function clear() {
     prev.forEach(div => div.remove());
 }
 
-menu.render();
+function handleCLick(btn) {
+    btn.classList.add("active");
+    switch (btn.id) {
+        case 'home':
+            clear();
+            home.render();
+            break;
+        case 'details':
+            clear();
+            details.render();
+            break;
+        case 'menu':
+            clear();
+            menu.render();
+            break;
+        case 'staff':
+            clear();
+            staff.render();
+            break;
+    }
+}
+
+home.render();
 navBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
         removeActiveClass();
-        btn.classList.add("active");
-        switch (btn.id) {
-            case 'home':
-                clear();
-                home.render();
-                break;
-            case 'details':
-                clear();
-                details.render();
-                break;
-            case 'menu':
-                clear();
-                menu.render();
-                break;
-            case 'staff':
-                clear();
-                staff.render();
-                break;
-        }
+        handleCLick(btn);
     });
-})
+});
 
 
 // details.render();

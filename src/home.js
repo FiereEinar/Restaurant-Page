@@ -1,4 +1,8 @@
 import "../src/home.css";
+import HomeImg from "../src/images/home-food.jpg";
+
+const homeImg = new Image();
+homeImg.src = HomeImg;
 
 export class Home {
     constructor(parent) {
@@ -9,9 +13,9 @@ export class Home {
         container.className = "container";
         this.parent.appendChild(container);
         //img
-        const imgContainer = document.createElement("div");
+        const imgContainer = homeImg;
         imgContainer.className = "imgContainer";
-        // imgContainer.style.backgroundImage = "url('../src/images/home-food.jpg')";
+        imgContainer.style.backgroundImage = homeImg;
         container.appendChild(imgContainer);
         //right side
         const rightContainer = document.createElement("div");

@@ -20,10 +20,12 @@
 .container > .imgContainer {
     width: 50%;
     height: 100%;
-    background-image: url(../src/images/home-food.jpg);
-    background-repeat: no-repeat;
+    /* background-image: url(../src/images/home-food.jpg); */
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    object-fit: cover;
+    /* object-position: center; */
 }
 
 .container > .rightContainer {

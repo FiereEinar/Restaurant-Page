@@ -1,4 +1,11 @@
 import "../src/details.css";
+import Location from "../src/images/location.jpg"
+import ServedFood from "../src/images/served-food-sample.jpg";
+
+const locationImg = new Image();
+locationImg.src = Location;
+const servedFoodImg = new Image();
+servedFoodImg.src = ServedFood;
 
 export class Details {
     constructor(parent) {
@@ -24,8 +31,7 @@ export class Details {
         head.innerHTML = "Location";
         location.appendChild(head);
         // image of location
-        const img = document.createElement("img");
-        img.src = "";
+        const img = locationImg;
         location.appendChild(img);
         // location details
         const locationDetails = document.createElement("p");
@@ -40,6 +46,13 @@ export class Details {
         const head = document.createElement("h1");
         head.innerHTML = "What We Serve";
         serve.appendChild(head);
+        //img
+        const servedImg = servedFoodImg;
+        serve.appendChild(servedImg);
+        //details
+        const serveDetails = document.createElement("p");
+        serveDetails.innerHTML = "Mauris sed nunc turpis. Integer tempus, nunc eu efficitur aliquam, nisl lacus dapibus lorem, eu volutpat mauris turpis sit amet libero. Donec non ligula in sem posuere porta. Aenean non erat lectus."
+        serve.appendChild(serveDetails);
     }
 }
 

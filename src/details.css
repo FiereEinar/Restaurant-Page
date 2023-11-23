@@ -1,9 +1,10 @@
 .detailsContainer {
-    width: 80%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem; 
-    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 30px 100px;
+    place-items: center;
 }
 
 .detailsContainer > div {
@@ -11,17 +12,23 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 25px;
+    /* max-width: 500px; */
+    padding: 15px;
     gap: 10px;
     background-color: #111827;
     color: #fff;
-    box-shadow: 0 4px 16px rgb(0, 0, 0, 0.8);
     border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.detailsContainer > div:hover {
+    box-shadow: 0 4px 16px rgb(0, 0, 0, 0.8);
+    transform: translateY(-10px);
 }
 
 .detailsContainer > .location > img {
     width: 100%;
-    height: 20rem;
+    /* height: 20rem; */
     border-radius: 5px;
     object-fit: cover;
     object-position: center;
@@ -32,4 +39,20 @@
     border-radius: 5px;
     object-fit: cover;
     object-position: center;
+}
+
+@media (max-width: 900px) {
+    .detailsContainer {
+        padding: 30px 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .detailsContainer {
+        padding: 30px 10px;
+    }
+    .detailsContainer > div > h1 {
+        width: 100%;
+        text-align: center;
+    }
 }

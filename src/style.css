@@ -104,13 +104,20 @@ nav > .buttonContainer > button:active {
     align-items: center;
     /* padding: 1rem; */
     background-color: #111827;
-    min-height: 100vh;
+    min-height: calc(100vh - 5rem);
     /* padding-bottom: 10rem; */
+}
+
+footer {
+    background-color: #020617;
+    color: #8d8d8d;
+    text-align: center;
+    padding: 5px;
 }
 
 @media (max-width: 676px) {
     nav {
-        padding: 10px;
+        padding: 20px;
     }
     nav > .right {
         flex-direction: column;

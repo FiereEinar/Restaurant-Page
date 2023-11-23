@@ -30,13 +30,13 @@ food2.src = Item2;
 const food3 = new Image();
 food3.src = Item3;
 
-const item0 = new Food("Fried Chiken", "15$", description0, food0);
+const item0 = new Food("Fried Chicken", "$15", description0, food0);
 items.push(item0);
-const item1 = new Food("Curry Rice", "10$", description1, food1);
+const item1 = new Food("Curry Rice", "$10", description1, food1);
 items.push(item1);
-const item2 = new Food("Lugaw", "8$", description2, food2);
+const item2 = new Food("Lugaw", "$8", description2, food2);
 items.push(item2);
-const item3 = new Food("Hand Flavored Soup", "12$", description3, food3);
+const item3 = new Food("Hand Flavored Soup", "$12", description3, food3);
 items.push(item3);
 
 export class Menu{

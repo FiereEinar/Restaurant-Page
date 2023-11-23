@@ -44,7 +44,7 @@ function handleCLick(btn) {
     }
 }
 
-menu.render();
+home.render();
 navBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
         removeActiveClass();

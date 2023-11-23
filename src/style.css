@@ -12,7 +12,7 @@ nav {
     display: flex;
     /* background-color: aquamarine; */
     justify-content: space-between;
-    height: 5rem;
+    min-height: 5rem;
     padding: 0 25px;
     flex-wrap: wrap;
     background-color: #020617;
@@ -46,12 +46,12 @@ nav  > .right > ul {
     flex-basis: 250px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 nav > .right > ul > li {
     cursor: pointer;
-    font-weight: 800;
+    /* font-weight: 800; */
     list-style: none;
     margin: auto;
     width: 3rem;
@@ -76,10 +76,10 @@ nav > .buttonContainer {
 
 nav > .buttonContainer > button {
     cursor: pointer;
-    font-weight: 800;
-    padding: 3px 10px;
+    /* font-weight: 800; */
+    padding: 5px 15px;
     border-radius: 10px;
-    font-size: 0.65rem;
+    font-size: 0.70rem;
     border: 1.5px solid aqua;
     background-color: #020617;
     color: #fff;
@@ -102,8 +102,27 @@ nav > .buttonContainer > button:active {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 1rem;
-    background-color: #cbd5e1;
-    padding-bottom: 10rem;
+    /* padding: 1rem; */
+    background-color: #111827;
+    min-height: 100vh;
+    /* padding-bottom: 10rem; */
 }
 
+@media (max-width: 676px) {
+    nav {
+        padding: 10px;
+    }
+    nav > .right {
+        flex-direction: column;
+        height: 5rem;
+    }
+    nav > .buttonContainer > button {
+        display: none;
+    }
+    nav  > .right > ul {
+        width: 100%;
+    }
+    nav > .buttonContainer {
+        flex: 0;
+    }
+}
